@@ -113,5 +113,54 @@
         "recall": 0.9801566579634464
       }
     }
+  },
+  "review_band": {
+    "low": 0.0,
+    "high": 0.81,
+    "review_cost": 0.3833333333333333,
+    "review_minutes": 1,
+    "cases_per_day": 96.0,
+    "cameras": 1,
+    "snapshot_every_min": 5,
+    "work_hours": 8,
+    "cost_per_1000": 509.75401733131423,
+    "designs": {
+      "do nothing": {
+        "\u20ac per 1,000": 10000.0,
+        "\u20ac per day": 960.0,
+        "missed per day": 4.800000000000001,
+        "reviews per day": 0.0,
+        "walks per day": 0.0,
+        "person-min per day": 0.0,
+        "people needed": 0.0
+      },
+      "person reviews every snapshot": {
+        "\u20ac per 1,000": 483.33333333333326,
+        "\u20ac per day": 46.39999999999999,
+        "missed per day": 0.0,
+        "reviews per day": 96.0,
+        "walks per day": 4.800000000000001,
+        "person-min per day": 120.0,
+        "people needed": 0.25
+      },
+      "model alone (fail \u2265 0.07)": {
+        "\u20ac per 1,000": 699.0636042402832,
+        "\u20ac per day": 67.11010600706719,
+        "missed per day": 0.24000000000000024,
+        "reviews per day": 0.0,
+        "walks per day": 9.555053003533569,
+        "person-min per day": 47.77526501766785,
+        "people needed": 0.09953180212014136
+      },
+      "model + review band [0.00, 0.81)": {
+        "\u20ac per 1,000": 509.75401733131423,
+        "\u20ac per day": 48.93638566380616,
+        "missed per day": 0.1371428571428572,
+        "reviews per day": 29.25734477536598,
+        "walks per day": 5.146249369005552,
+        "person-min per day": 54.98859162039374,
+        "people needed": 0.1145595658758203
+      }
+    }
   }
 }
