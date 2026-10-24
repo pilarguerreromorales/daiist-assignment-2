@@ -1,0 +1,95 @@
+{
+  "dataset": {
+    "workspace": "joseph-nelson",
+    "project": "hard-hat-workers",
+    "version": 5
+  },
+  "weights": "weights/hardhat_yolo11n.pt",
+  "positive_class": "head",
+  "class_names": [
+    "head",
+    "helmet"
+  ],
+  "imgsz": 640,
+  "det_conf": 0.25,
+  "cost": {
+    "FP": 2,
+    "TP": 2,
+    "TN": 0.0,
+    "FN": 200.0
+  },
+  "base_rate": 0.05,
+  "threshold": 0.07,
+  "cost_per_1000_at_threshold": 699.0636042402832,
+  "references_per_1000": {
+    "pass everything (no model)": 10000.0,
+    "flag everything (person checks all)": 2000.0
+  },
+  "overall": {
+    "coco_zero_shot": {
+      "mAP50": 0.003479056512541749,
+      "mAP50-95": 0.0012569453065253262
+    },
+    "finetuned": {
+      "mAP50": 0.9702857280135351,
+      "mAP50-95": 0.6924199790339891
+    },
+    "predict_nothing": {
+      "mAP50": 0.0,
+      "mAP50-95": 0.0
+    }
+  },
+  "detection_confusion": {
+    "finetuned": {
+      "head": {
+        "head": 688,
+        "helmet": 3,
+        "background": 77
+      },
+      "helmet": {
+        "head": 15,
+        "helmet": 1858,
+        "background": 156
+      },
+      "background": {
+        "head": 23,
+        "helmet": 54,
+        "background": 0
+      }
+    },
+    "coco_zero_shot": {
+      "head": {
+        "head": 23,
+        "helmet": 24,
+        "background": 2859
+      },
+      "helmet": {
+        "head": 0,
+        "helmet": 0,
+        "background": 0
+      },
+      "background": {
+        "head": 703,
+        "helmet": 1891,
+        "background": 0
+      }
+    },
+    "predict_nothing": {
+      "head": {
+        "head": 0,
+        "helmet": 0,
+        "background": 0
+      },
+      "helmet": {
+        "head": 0,
+        "helmet": 0,
+        "background": 0
+      },
+      "background": {
+        "head": 726,
+        "helmet": 1915,
+        "background": 0
+      }
+    }
+  }
+}

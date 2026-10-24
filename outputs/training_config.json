@@ -1,0 +1,18 @@
+{
+  "data": "/content/daiist-assignment-2/datasets/hard-hat-workers-v5/data_local.yaml",
+  "epochs": 50,
+  "patience": 15,
+  "imgsz": 640,
+  "batch": 16,
+  "seed": 0,
+  "device": "0",
+  "project": "/content/daiist-assignment-2/runs",
+  "name": "hardhat",
+  "exist_ok": true,
+  "fraction": 1.0,
+  "plots": true,
+  "verbose": false,
+  "base_model": "yolo11n.pt",
+  "torch": "2.11.0+cu130",
+  "best_epoch_weights": "weights/hardhat_yolo11n.pt"
+}
