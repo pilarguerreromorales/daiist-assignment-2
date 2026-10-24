@@ -1,9 +1,9 @@
 # Assignment 2 Report
 
 - **Name**: Pilar Guerrero
-- **Student ID**:
-- **Email**:
-- **Group**: [BBADBA 5A | BBADBA 5B | PPLEDBA 5A | BDBA 3A]
+- **Student ID**: 20373
+- **Email**: pguerrero.ieu2022@student.ie.edu
+- **Group**: BBADBA 5A 
 
 ## Business problem, and the cost of being wrong
 
